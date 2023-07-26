@@ -65,8 +65,7 @@ H1 {
   width: 200px;
 }
 .bibliotek {
-  display: flex;
-  justify-content: center;
+  
   height: 190px;
   width: 380px;
   border-radius: 10px;
