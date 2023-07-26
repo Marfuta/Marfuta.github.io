@@ -65,7 +65,7 @@ H1 {
   width: 200px;
 }
 .bibliotek {
-  
+
   height: 190px;
   width: 380px;
   border-radius: 10px;
@@ -81,6 +81,7 @@ H1 {
   animation-duration: 0.2s;
   height: 230px;
   width: 420px;
+  animation-timing-function: linear;
   animation-name: bibl;
 }
 
