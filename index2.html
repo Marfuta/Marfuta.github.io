@@ -1,0 +1,135 @@
+<DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body background='img/нана2.png'>
+  <main>
+      <div class="composl">
+        <div class="ccilkil">
+          <form action="https://vk.com/club203628215" target="_blank">
+            <button class="vk">
+              <img class="pis" src="img/вк.png" width="44" height="33"  alt="вк">
+            </button>
+        </form>
+          <button class="school">
+            <!-- <img class="pis" src="img/вк.png" width="44" height="33"  alt="вк"> -->
+          </button>
+        </div>
+      </div>
+      <div class="osn">
+        <div class = "inf">
+          <div class = naz>Библиотека</div>
+          <div class="cnop">
+            <button onclick="document.location='index2.html'" class="bibliotek item1">
+                <p>2021</p>
+            </bibliotek>
+            <button class="bibliotek">
+
+            </bibliotek>
+            <button class="bibliotek">
+
+            </bibliotek>
+            <button class="bibliotek">
+
+            </bibliotek>
+            <button class="bibliotek">
+
+            </bibliotek>
+          </div>
+          <div class = naz>Информация о Лотерея–аллегри</div>
+          <div>
+
+          </div>
+        </div>
+        <div class="composr">
+          <div class="ccilkir">
+
+
+            <button class="com" >Библиотека</com>
+            <button class="com">Информация о Лотерея–аллегри</com>
+            <button class="com">Организаторы</com>
+
+          </div>
+        </div>
+      </div>
+      <div class="btn-up btn-up_hide"></div>
+
+  </main>
+  <script>
+  const btnUp = {
+    el: document.querySelector('.btn-up'),
+    scrolling: false,
+    show() {
+      if (this.el.classList.contains('btn-up_hide') && !this.el.classList.contains('btn-up_hiding')) {
+        this.el.classList.remove('btn-up_hide');
+        this.el.classList.add('btn-up_hiding');
+        window.setTimeout(() => {
+          this.el.classList.remove('btn-up_hiding');
+        }, 300);
+      }
+    },
+    hide() {
+      if (!this.el.classList.contains('btn-up_hide') && !this.el.classList.contains('btn-up_hiding')) {
+        this.el.classList.add('btn-up_hiding');
+        window.setTimeout(() => {
+          this.el.classList.add('btn-up_hide');
+          this.el.classList.remove('btn-up_hiding');
+        }, 300);
+      }
+    },
+    addEventListener() {
+      // при прокрутке окна (window)
+      window.addEventListener('scroll', () => {
+        const scrollY = window.scrollY || document.documentElement.scrollTop;
+        if (this.scrolling && scrollY > 0) {
+          return;
+        }
+        this.scrolling = false;
+        // если пользователь прокрутил страницу более чем на 200px
+        if (scrollY > 400) {
+          // сделаем кнопку .btn-up видимой
+          this.show();
+        } else {
+          // иначе скроем кнопку .btn-up
+          this.hide();
+        }
+      });
+      // при нажатии на кнопку .btn-up
+      document.querySelector('.btn-up').onclick = () => {
+        this.scrolling = true;
+        this.hide();
+        // переместиться в верхнюю часть страницы
+        window.scrollTo({
+          top: 0,
+          left: 0,
+          behavior: 'smooth'
+        });
+      }
+    }
+  }
+
+  btnUp.addEventListener();
+
+
+
+
+
+
+  </script>
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+</html>
