@@ -118,7 +118,7 @@ const btnUp = {
         return;
       }
       this.scrolling = false;
-      // если пользователь прокрутил страницу более чем на 200px
+      // если пользователь прокрутил страницу более чем на 400px
       if (scrollY > 400) {
         // сделаем кнопку .btn-up видимой
         this.show();
@@ -135,7 +135,7 @@ const btnUp = {
       window.scrollTo({
         top: 0,
         left: 0,
-        behavior: 'smooth'
+        // behavior: 'smooth'
       });
     }
   }
