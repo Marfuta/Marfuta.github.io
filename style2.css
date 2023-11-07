@@ -113,14 +113,15 @@ footer {
 }
 
 .ccilkir{
+
+  margin-top:453px;
   border-radius: 45px;
   padding-top:7px;
   padding-bottom: 7px;
   margin-bottom: 100px;
-  margin-top:434px;
   display: flex;
   align-items: center;
-  flex-direction: column;
+  /* flex-direction: column; */
   border: 0px solid rgba(255,255,255, 0.5);
   background-color: rgba(255,255,255, 0.3);
   height: 216px;
@@ -143,7 +144,7 @@ footer {
   padding: 20px;
   margin-bottom: 100px;
   margin-left: -10px;
-  margin-top:434px;
+  margin-top:453px;
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
@@ -155,14 +156,15 @@ footer {
 }
 
 .com{
-
+  display: flex;
+  justify-content: center;
   height: 60px;
   width: 209px;
   border-radius: 30px;
   border: 2px solid rgba(255,255,255, 0.8);
   background-color: rgba(255,255,255, 0.5);
   margin-top: 8px;
-  margin-left:9px;
+  margin-left:-30px;
   margin-right: 7px;
   margin-bottom: 8px;
   font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
@@ -180,7 +182,8 @@ footer {
 .naz{
   align: left;
   font-size: 40px;
-
+  /* margin-left: inherit;
+  margin-right: inherit; */
 }
 
 .cnop{
@@ -267,7 +270,7 @@ footer {
 
 
 
-  .vk{
+  .perehod{
 
     display: flex;
     justify-content: center;
@@ -276,40 +279,31 @@ footer {
     border-radius: 33px;
     border: 4px solid #4d7fb9;
     margin-left: -5px;
+    margin-top: -10px;
+
     background-color:  rgba(255,255,255, 0.5);
     /* background-image: url(img/вк.png)  */
     transition: all ease 0.2s;
 
   }
 
-.vk:hover{
+.perehod:hover{
   background-color:  rgba(255,255,255, 0.2);
+  cursor:pointer;
 }
 
 
 .pis{
   margin-top:12px
 }
-
-
+.yandex{
+  margin-top: 10px;
+}
 .school{
-  /* margin-top: 10px; */
-  display: flex;
-  justify-content: center;
-  width: 66px;
-  height: 66px;
-  border-radius: 33px;
-  border: 4px solid #4d7fb9;
-  margin-left: -5px;
-  background-color:  rgba(255,255,255, 0.5);
-  /* background-image: url(img/вк.png)  */
-  transition: all ease 0.2s;
-
+  margin-top: -5px;
+  padding-bottom: 50px;
 }
 
-.school:hover{
-background-color:  rgba(255,255,255, 0.2);
-}
 
 .exp{
   display: flex;
@@ -317,5 +311,69 @@ background-color:  rgba(255,255,255, 0.2);
   width: 150px;
   height: 150px;
   border-radius: 100%;
-  margin: 50px;
+  border: 5px solid rgba(255,255,255, 0.8);
+  margin-left: 20px;
+  transition: all ease 0.2s;
+  transition-property: all;
+}
+.exp:hover{
+  animation-duration: 0.2s;
+  width: 155px;
+  height: 155px;
+  border: 3px solid rgba(255,255,255, 0.8);
+  transform:scale(1.1,1.1);
+  cursor:pointer;
+  margin-left: 15px;
+}
+.exxpxx{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 25px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.card{
+  font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+
+  margin-top: 20px;
+  padding: 20px;
+  justify-content: center;
+  margin-bottom: 20px;
+  background: rgba(255,255,255,0.5);
+  border-radius: 30px;
+}
+.k{
+  text-indent: 20px;
+  font-size: 20px;
+}
+/* Ссылки в странице на страницу */
+
+.spis{
+
+}
+ul{
+  display: block;
+  margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+.nnm{
+
+  display: flex;
+  justify-content: center;
+}
+.trt{
+  border-radius: 30px;
+  justify-content: center;
+  padding-top: 20px;
+  display: flex;
+  width: 209px;
+  height: 60px;
 }
