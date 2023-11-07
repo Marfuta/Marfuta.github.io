@@ -4,9 +4,17 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="styl.css">
 <title> Проба пера </title>
-<style>
-
-</style>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script type="text/javascript">
+ $(document).ready(function(){
+    $("#spis").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 600);
+    });
+});
+</script>
 </head>
 <body background='img/нана2.png'>
 
@@ -23,50 +31,59 @@
     <div class="composl">
       <div class="ccilkil">
         <form action="https://vk.com/club203628215" target="_blank">
-          <button class="vk">
+          <button class="perehod vk">
             <img class="pis" src="img/вк.png" width="44" height="33"  alt="вк">
           </button>
-      </form>
-        <button class="school">
-          <!-- <img class="pis" src="img/вк.png" width="44" height="33"  alt="вк"> -->
-        </button>
+        </form>
+        <form action="http://sch161zelenogorsk.ru/" target="_blank">
+          <button class="perehod school">
+            <img class="pis" src="img/школа.png" width="44" height="38"  alt="Школа">
+          </button>
+          <form action="https://vk.com/club203628215" target="_blank">
+            <button class="perehod yandex">
+              <!-- <img class="pis" src="img/вк.png" width="44" height="33"  alt="вк"> -->
+            </button>
+          </form>
       </div>
     </div>
     <div class="osn">
 
 
       <div class = "inf">
-        <div class = naz id='bibl'>Библиотека</div>
+        <div class = naz id="t1">Библиотека</div>
         <div class="cnop">
           <button onclick="document.location='index2.html'" class="bibliotek item1">
-              <p>2021</p>
+              <p><font color=white>2021</font> </p>
           </bibliotek>
-          <button class="bibliotek">
-
+          <button class="bibliotek item2">
+              <p><font color=white>2022</font></p>
           </bibliotek>
-          <button class="bibliotek">
-
-          </bibliotek>
-          <button class="bibliotek">
-
-          </bibliotek>
-          <button class="bibliotek">
-
+          <button class="bibliotek item3">
+              <p><font color=white>2023</font></p>
           </bibliotek>
         </div>
-        <div class = naz>Информация о Лотерея–аллегри</div>
-        <div>
-
+        <div class = naz id="t2">Информация о Лотерея–аллегри</div>
+        <div class="card">
+          <p class="k">В школе №161 города Зеленогорск Красноярского края началась серия образовательных событий для любопытных и любознательных учащихся 4-8 классов - Лотерея–аллегри «Ohne mechanismus».</p>
+          <p class="k">Событие межпредметное, командное, опытно-экспериментальное. Главная образовательная идея состоит в раскрытии «секретов» работы различных механизмов.</p>
+          <p class="k">Во время События мы постараемся понять, как и на каких принципах строится механика приборов, изобретений, инженерных решений, какое значение во всем этом имеют математика, биология, физика и химия и другие науки. Каждое событие - тематическое.</p>
+          <p class="k">В итоге мы создаем STEM-иллюстрацию. оригинальную, авторскую модельку, теоретически и практически доступную для самостоятельного выполнения, с ясной и краткой инструкцией, с простыми рисунками, с фото-видеоматериалами.</p>
+          <p class="k">STEM-иллюстрация нужна такая, что ее можно мастерить в начальной школе. Однако у нее должны быть ценные выигрышные моменты - модель можно использовать со старшеклассниками при изучении отдельных тем на уроках.</p>
         </div>
       </div>
       <div class="composr">
         <div class="ccilkir">
+          <ul class="spis" id="spis">
+            <li class="com"><a class="trt" href="#t1"> <div class="nnm"> Библиотека  </div></a></li>
+            <li class="com"><a class="trt" href="#t2"> <div class="nnm"> Информация  </div></a> </li>
+            <li class="com"><a class="trt" href="#t3"><div class="nnm"> Организаторы </div></a></li>
 
-
-          <button class="com"> Библиотека </com>
-          <button class="com">Информация о Лотерея–аллегри</com>
-          <button class="com">Организаторы</com>
-
+          </ul>
+          <!-- <ul>
+            <li><a class="com" href="#t1"> Библиотека </com></li>
+            <li><button class="com">Информация о Лотерея–аллегри</com></li>
+            <li><button class="com">Организаторы</com></li>
+          </ul> -->
         </div>
       </div>
     </div>
